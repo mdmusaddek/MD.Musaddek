@@ -131,14 +131,16 @@
         <h3>Location</h3>
         <p style="margin-top: 10px;">Bangladesh</p>
     </div>
-</div><br><p class="d" style="font-size:30px;text-align: center; color: yellow">___ ___</p><br><h4 style="
-text-align:center;
-margin-bottom:20px;
-font-size:28px;
-color:var(--primary);
-">
+</div>
+
+<br>
+<p class="d" style="font-size:30px;text-align: center; color: yellow">___ ___</p>
+<br>
+
+<h4 style="text-align:center; margin-bottom:20px; font-size:28px; color:var(--primary);">
 📨 Send Me a Message<p><b>↓</b></p> 
 </h4>
+
 <form action="https://formspree.io/f/xkolakvn" method="POST" class="contact-form">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://mdmusaddek.github.io/MD.Musaddek/thankyou.html">
@@ -160,8 +162,8 @@ color:var(--primary);
         <i class="fas fa-paper-plane"></i>
         Send Message
     </button>
-
 </form>
+
 <div class="card" style="margin-top: 30px; text-align: center; width: 100%;">
     <p style="font-size:22px;" id="N">Thank you for visiting my website 🙂🎉</p>
     <p style="margin-top: 15px; font-size: 14px;">Profile Views: <span id="visitor-count" style="color: var(--primary); font-weight: bold;">Loading...</span></p>
@@ -232,7 +234,7 @@ const counterSpan = document.getElementById('visitor-count');
 // এটি একটি নির্ভরযোগ্য ওপেনসোর্স কাউন্টার এপিআই
 fetch('https://api.microlink.io/?url=https://github.com') 
   .then(() => {
-      // ডেমো হিসেবে বা লোকাল স্টোরেজ দিয়ে ভিজিটর ট্রেক (যেহেতু countapi প্রায়ই ডাউন থাকে)
+      // ডেমো হিসেবে বা লোকাল স্টোরেজ দিয়ে ভিজিটর ট্র্যাক (যেহেতু countapi প্রায়ই ডাউন থাকে)
       let visits = localStorage.getItem('visits') || 0;
       visits = parseInt(visits) + 1;
       localStorage.setItem('visits', visits);
