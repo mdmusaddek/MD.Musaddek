@@ -57,14 +57,15 @@
     <div class="card">
         <i class="fab fa-facebook"></i>
         <h3>Facebook</h3>
-        <p><a href="https://www.facebook.com/md.musaddek.hosan.2025" target ="_blank"style="color: var(--primary); text-decoration: none;">Click here</a></p>
+        <p><a href="https://www.facebook.com/md.musaddek.hosan.2025" target="_blank" style="color: var(--primary); text-decoration: none;">Click here</a></p>
     </div>
     <div class="card">
         <i class="fab fa-whatsapp"></i>
         <h3>Whatsapp</h3>
         <p><a href="https://wa.me/8801790639041" target="_blank" style="color: var(--primary); text-decoration: none;">Message me</a></p>
     </div>
-   
+</div>
+</section>
 
 <section id="projects">
 <h2 class="title">About me</h2>
@@ -95,6 +96,7 @@
     </div>
 </div>
 </section>
+
 <section id="Projects">
 <h2 class="title">My creations</h2>
 <div class="grid">
@@ -110,6 +112,7 @@
     </div>
 </div>
 </section>
+
 <section id="contact">
 <h2 class="title">Contact</h2>
 <div class="grid">
@@ -164,6 +167,7 @@ color:var(--primary);
     <p style="margin-top: 15px; font-size: 14px;">Profile Views: <span id="visitor-count" style="color: var(--primary); font-weight: bold;">Loading...</span></p>
 </div>
 </section>
+
 <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
 <footer>
@@ -228,7 +232,7 @@ const counterSpan = document.getElementById('visitor-count');
 // এটি একটি নির্ভরযোগ্য ওপেনসোর্স কাউন্টার এপিআই
 fetch('https://api.microlink.io/?url=https://github.com') 
   .then(() => {
-      // ডেমো হিসেবে বা লোকাল স্টোরেজ দিয়ে ভিজিটর ট্র্যাক (যেহেতু countapi প্রায়ই ডাউন থাকে)
+      // ডেমো হিসেবে বা লোকাল স্টোরেজ দিয়ে ভিজিটর ট্রেক (যেহেতু countapi প্রায়ই ডাউন থাকে)
       let visits = localStorage.getItem('visits') || 0;
       visits = parseInt(visits) + 1;
       localStorage.setItem('visits', visits);
